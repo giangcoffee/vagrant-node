@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo echo "Europe/Berlin" | sudo tee /etc/timezone
+sudo echo "Asia/Ho_Chi_Minh" | sudo tee /etc/timezone
 sudo dpkg-reconfigure -f noninteractive tzdata
 
 sudo apt-get update -y
