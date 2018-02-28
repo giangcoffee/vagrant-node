@@ -19,9 +19,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vm.cpus = 2
   end
 
-  config.vm.provision "docker" do |docker|
-    docker.pull_images "ubuntu"
-  end
+  #config.vm.provision "docker" do |docker|
+  #  docker.pull_images "ubuntu"
+  #end
 
   config.vm.provision "shell", path: "provision.sh", privileged: false
 end
