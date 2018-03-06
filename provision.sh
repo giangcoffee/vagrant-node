@@ -5,13 +5,14 @@ sudo dpkg-reconfigure -f noninteractive tzdata
 
 sudo apt-get update -y
 sudo apt-get install -y build-essential curl git libssl-dev man mongodb-clients
+sudo apt-get install -y mongodb-server
 
 git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
 echo "source ~/.nvm/nvm.sh" >> ~/.profile
 source ~/.profile
 
-nvm install 0.10
-nvm alias default 0.10
+nvm install v8.9.4
+nvm alias default 8.9.4
 
 npm install -g browserify
 npm install -g eslint
